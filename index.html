@@ -1,13 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Nerei</title>
+  <meta charset="UTF-8">
+  <title>Portfolio de Nerei</title>
+  <!-- Enllaç a les llibreries de Bootstrap i AOS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://michalsnik.github.io/aos/2.3.4/aos.css" />
+  <script src="https://michalsnik.github.io/aos/2.3.4/aos.js"></script>
+  <!-- Enllaç a l'estil personalitzat -->
+  <link rel="stylesheet" href="estil.css">
 </head>
 <body>
-    <h1>Pàgina Principal Nerei</h1>
-    <p> aixo es un paragraf</p>
+
+  <style>
+header {
+  background-color: #ff0000;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+  </style>
+
+
+  <!-- Portada -->
+  <section id="portada" class="jumbotron text-center"> 
+    <h1 class="display-4">Nerei - Informàtic</h1>
+    <p class="lead">[Missatge impactant o descriptiu]</p>
+    <a href="#sobre-mi" class="btn btn-primary btn-lg">Sobre mi</a>
+  </section>
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="container my-5">
+    <h2 class="text-center mb-4">Sobre mi</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="[enllaç a una foto teva]" alt="[Nom]">
+        <p class="mt-3"><strong>Nerei</strong></p>
+        <p>Av. de Cristòfol Colom, 34, 42, 43500 Tortosa, Tarragona</p>
+        <p>699123123</p>
+        <p><a href="[enllaç a un correu electrònic]">[Nereheirodriguez@iesebre.com]</a></p>
+        <p><a href="[enllaç a un lloc web personal o blog]">[Lloc web personal o blog]</a></p>
+        <p><a href="[enllaç a un perfil de LinkedIn]"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+        <p><a href="[enllaç a un perfil de Twitter]"><i class="fab fa-twitter"></i> Twitter</a></p>
+      </div>
+      <div class="col-md-8">
+        <p>[Breu descripció personal]</p>
+        <h3>Habilitats i coneixements</h3>
+        <ul>
+          <li>[Habilitat o coneixement 1]</li>
+          <li>[Habilitat o coneixement 2]</li>
+          <li>[Habilitat o coneixement 3]</li>
+          <li>...</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Curriculum -->
+  <section id="curriculum" class="container my-5">
+    <h2 class="text-center mb-4">Curriculum</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Estudis</h3>
+        <ul>
+          <li>[Títol del grau o carrera], [Nom de la universitat], [Any d'inici] - [Any de fi]</li>
+          <li>[Títol del màster], [Nom de la universitat], [Any d'inici] - [Any de fi]</li>
+          <li>...</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Experiència professional</h3>
+        <ul>
+          <li>[Nom de la empresa], [Títol del càrrec], [Data d'inici] - [Data de fi]</li>
+          <li>[Nom de la empresa], [Títol del càrrec], [Data d'inici] - [Data de fi]</li>
+          <li>...</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio -->
+  <section id="portfolio" class="container my-5">
+    <h2 class="text-center mb-4">Portfolio</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="[enllaç a una imatge del projecte]" class="card-img-top" alt="[Títol del projecte]">
+          <div class="card-body">
+            <h5 class="card-title">[Títol del projecte]</h5>
+            <p class="card-text">[Breu descripció del projecte]</p>
+            <a href="[enllaç al projecte]" class="btn btn-primary">Veure més</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="[enllaç a una imatge del projecte]" class="card-img-top" alt="[Títol del projecte]">
+          <div class="card-body">
+            <h5 class="card-title">[Títol del projecte]</h5>
+            <p class="card-text">[Breu descripció del projecte]</p>
+            <a href="[enllaç al projecte]" class="btn btn-primary">Veure més</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="[enllaç a una imatge del projecte]" class="card-img-top" alt="[Títol del projecte]">
+          <div class="card-body">
+            <h5 class="card-title">[Títol del projecte]</h5>
+            <p class="card-text">[Breu descripció del projecte]</p>
+            <a href="[enllaç al projecte]" class="btn btn-primary">Veure més</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Serveis -->
+  <section id="serveis" class="container my-5">
+    <h2 class="text-center mb-4">Serveis</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">El Bueno</h5>
+              <p class="card-text">Servei complet i de qualitat amb preu just.</p>
+              <p class="card-text">[Descripció dels serveis inclosos]</p>
+              <p class="card-text">[Preu]</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">El Feo</h5>
+              <p class="card-text">Servei bàsic sense moltes opcions amb preu reduït.</p>
+              <p class="card-text">[Descripció dels serveis inclosos]</p>
+              <p class="card-text">[Preu]</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">El Malo</h5>
+              <p class="card-text">Servei limitat i amb moltes restriccions amb preu molt reduït.</p>
+              <p class="card-text">[Descripció dels serveis inclosos]</p>
+              <p class="card-text">[Preu]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonis -->
+    <section id="testimonis" class="container my-5">
+      <h2 class="text-center mb-4">Testimonis</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nibh ac augue dictum lacinia. Vivamus vulputate, enim vitae rutrum pellentesque, nisl ex auctor nisi, ut sodales diam diam sit amet augue."</p>
+              <p class="card-text">- [Nom del client]</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac nibh ac augue dictum lacinia. Vivamus vulputate, enim vitae rutrum pellentesque, nisl ex auctor nisi, ut sodales diam diam sit amet augue."</p>
+              <p class="card-text">- [Nom del client]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacte -->
+    <section id="contacte" class="container my-5">
+      <h2 class="text-center mb-4">Contacte</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h3>Mapa</h3>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item"></iframe>
+    
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.563224725371!2d2.157558215184258!3d41.39089617926031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3b3a2b4529f%3A0xac4e4f1a444ae4cd!2sSagrada%20Fam%C3%ADlia!5e0!3m2!1sca!2ses!4v1620400696101!5m2!1sca!2ses" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div class="col-md-6 mb-4">
+        <h3>Formulari de contacte</h3>
+        <form>
+        <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" id="nom">
+        </div>
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+        <label for="missatge">Missatge</label>
+        <textarea class="form-control" id="missatge" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        </div>
+        </div>
+        
+          </section>
+          <!-- Xarxes socials -->
+          <section id="xarxes-socials" class="container my-5">
+            <h2 class="text-center mb-4">Xarxes socials</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-2 mb-4">
+                <a href="[Enllaç al perfil de LinkedIn]" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+              </div>
+              <div class="col-md-2 mb-4">
+                <a href="[Enllaç al perfil de Facebook]" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+              </div>
+              <div class="col-md-2 mb-4">
+                <a href="[Enllaç al perfil d'Instagram]" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+              </div>
+              <div class="col-md-2 mb-4">
+                <a href="[Enllaç al canal de Youtube]" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+              </div>
+            </div>
+          </section>
+          <!-- Peu de pàgina -->
+          <footer class="bg-light py-3">
+            <div class="container text-center">
+              <p>Copyright © 2023
+                <a href="#">[Nom de l'empresa]</a>
+              </p>
+            </div>
+          </footer>
+          <!-- Fitxers JavaScript -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/js/all.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Inicialitza AOS
+    AOS.init();
+  </script>
 </body>
 </html>
